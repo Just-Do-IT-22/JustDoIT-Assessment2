@@ -3213,6 +3213,30 @@ input, select, textarea {
 			width: 150px;
 		}
 
+/* Interview */
+
+	#interview {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		padding-left: 5em;
+		padding-top: 4em;
+	}
+
+	#interview-audio {
+		width: 60em;
+	}
+	
+		#interview-audio:hover {
+			animation-name: rainbow-audio;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes rainbow-audio {
+			to {filter:hue-rotate(360deg)}
+		}
+
 /* Wrapper */
 
 	.wrapper {
@@ -3231,6 +3255,10 @@ input, select, textarea {
 					padding: 4em 4em 2em 4em ;
 				}
 
+				#interview {
+					padding-left: 4em;
+				}
+
 			}
 
 			@media screen and (max-width: 1280px) {
@@ -3245,6 +3273,10 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					padding: 3em 2em 1em 2em ;
+				}
+
+				#interview {
+					padding-left: 2em;
 				}
 
 			}
